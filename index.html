@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>click button to view the website</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+
+  }
+
+  /* Container for the background and content */
+  .background-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* Blurred background */
+  .background-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/736x/4b/bc/5c/4bbc5c7f9365f56b36f3806bb40a1b9a.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    filter: blur(10.9px); /* Adjust blur intensity */
+    z-index: -1;
+  }
+
+  /* Content to display over the background */
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 100%; /* Make sure it takes full height */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  font-style: normal;
+  }
+  span {
+    background: #B52DFF;
+background: linear-gradient(to right, #B52DFF 0%, #39B8CF 100%);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+  }
+  h2{
+    color: rgb(165, 30, 30)
+  }
+  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* From Uiverse.io by ShrinilDhorda */ 
+.btn {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btn:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+a{
+  background: linear-gradient(to right, #2c8374 0%, #036af0  100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+      text-decoration: none;
+  font-weight: 551;
+}
+</style>
+</head>
+<body>
+<div class="background-container">
+  <div class="content">
+    <h2 style="font-size: 30px;">To view <span>ADD PROJECT NAME</span> website,</h2>
+    <h1 style="background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    ">Cick the button below</h1>
+    <br>
+    <button class="btn" id="watchButton">
+      Watch
+    </button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+<br>
+
+<a href="https://maizenux.github.io" class="link">DEVOLOPED BY MAIZEN UX</a>
+
+   </div>
+</div>
+<script>
+   document.getElementById('watchButton').onclick = function() {
+    window.location.href = 'ADD YOUR LINK';
+  };
+</script>
+</body>
+</html>
